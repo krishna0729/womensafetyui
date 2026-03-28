@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Safety Tools — SafeHer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <i class="fas fa-shield-heart"></i> SafeHer
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="safety.html">Safety Tools</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <h1><i class="fas fa-tools" style="color:var(--red)"></i> Safety Tools</h1>
+      <p>Everything you need to stay prepared and protected.</p>
+    </div>
+  </section>
+
+  <!-- ===== EMERGENCY CHECKLIST ===== -->
+  <section class="safety-section" aria-labelledby="checklistTitle">
+    <div class="container">
+      <h2 class="section-title" id="checklistTitle">
+        <i class="fas fa-clipboard-check" style="color:var(--red)"></i> Emergency Checklist
+      </h2>
+      <p class="section-subtitle">Check off items to track your preparedness.</p>
+
+      <div class="checklist" role="list">
+
+        <div class="checklist-item" role="listitem">
+          <input type="checkbox" id="c1" />
+          <label for="c1">
+            <strong>Save emergency contacts</strong> — Police (100), Ambulance (108), Women Helpline (1091) saved in your phone.
+          </label>
+        </div>
+
+        <div class="checklist-item" role="listitem">
+          <input type="checkbox" id="c2" />
+          <label for="c2">
+            <strong>Share live location</strong> — Enable location sharing with at least one trusted contact.
+          </label>
+        </div>
+
+        <div class="checklist-item" role="listitem">
+          <input type="checkbox" id="c3" />
+          <label for="c3">
+            <strong>Charge your phone</strong> — Keep your phone above 50% charge when going out alone.
+          </label>
+        </div>
+
+        <div class="checklist-item" role="listitem">
+          <input type="checkbox" id="c4" />
+          <label for="c4">
+            <strong>Inform someone of your route</strong> — Let a trusted person know your destination and expected return time.
+          </label>
+        </div>
+
+        <div class="checklist-item" role="listitem">
+          <input type="checkbox" id="c5" />
+          <label for="c5">
+            <strong>Carry a personal alarm</strong> — A loud personal alarm can deter attackers and attract attention.
+          </label>
+        </div>
+
+        <div class="checklist-item" role="listitem">
+          <input type="checkbox" id="c6" />
+          <label for="c6">
+            <strong>Know your surroundings</strong> — Identify exits, safe spaces, and well-lit areas in unfamiliar locations.
+          </label>
+        </div>
+
+        <div class="checklist-item" role="listitem">
+          <input type="checkbox" id="c7" />
+          <label for="c7">
+            <strong>Trust your instincts</strong> — If something feels wrong, leave the situation immediately.
+          </label>
+        </div>
+
+        <div class="checklist-item" role="listitem">
+          <input type="checkbox" id="c8" />
+          <label for="c8">
+            <strong>Learn basic self-defense</strong> — Enroll in a local self-defense class or watch online tutorials.
+          </label>
+        </div>
+
+        <div class="checklist-item" role="listitem">
+          <input type="checkbox" id="c9" />
+          <label for="c9">
+            <strong>Keep a backup power bank</strong> — Ensure your phone stays charged during long outings.
+          </label>
+        </div>
+
+        <div class="checklist-item" role="listitem">
+          <input type="checkbox" id="c10" />
+          <label for="c10">
+            <strong>Download offline maps</strong> — Have offline maps available in case of poor connectivity.
+          </label>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEARBY HELP ===== -->
+  <section class="safety-section" id="nearby" style="background:var(--gray-light); padding:3rem 0;" aria-labelledby="nearbyTitle">
+    <div class="container">
+      <h2 class="section-title" id="nearbyTitle">
+        <i class="fas fa-map-marker-alt" style="color:var(--red)"></i> Nearby Help
+      </h2>
+      <p class="section-subtitle">Closest police stations and hospitals in your area.</p>
+
+      <div class="location-cards">
+
+        <!-- Police Stations -->
+        <div class="location-card">
+          <div class="location-card-header">
+            <i class="fas fa-shield-alt"></i> Nearby Police Stations
+          </div>
+          <ul class="location-list">
+            <li class="location-item">
+              <div>
+                <strong>Central Police Station</strong>
+                <span>0.8 km away · Open 24/7</span>
+              </div>
+              <a href="#" aria-label="Get directions to Central Police Station">Directions</a>
+            </li>
+            <li class="location-item">
+              <div>
+                <strong>North District Station</strong>
+                <span>1.4 km away · Open 24/7</span>
+              </div>
+              <a href="#" aria-label="Get directions to North District Station">Directions</a>
+            </li>
+            <li class="location-item">
+              <div>
+                <strong>Women's Police Station</strong>
+                <span>2.1 km away · 8AM–8PM</span>
+              </div>
+              <a href="#" aria-label="Get directions to Women's Police Station">Directions</a>
+            </li>
+            <li class="location-item">
+              <div>
+                <strong>East Zone Station</strong>
+                <span>3.0 km away · Open 24/7</span>
+              </div>
+              <a href="#" aria-label="Get directions to East Zone Station">Directions</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hospitals -->
+        <div class="location-card">
+          <div class="location-card-header">
+            <i class="fas fa-hospital"></i> Nearby Hospitals
+          </div>
+          <ul class="location-list">
+            <li class="location-item">
+              <div>
+                <strong>City General Hospital</strong>
+                <span>0.5 km away · Emergency 24/7</span>
+              </div>
+              <a href="#" aria-label="Get directions to City General Hospital">Directions</a>
+            </li>
+            <li class="location-item">
+              <div>
+                <strong>St. Mary's Medical Centre</strong>
+                <span>1.2 km away · Emergency 24/7</span>
+              </div>
+              <a href="#" aria-label="Get directions to St. Mary's Medical Centre">Directions</a>
+            </li>
+            <li class="location-item">
+              <div>
+                <strong>Apollo Women's Clinic</strong>
+                <span>1.9 km away · 7AM–10PM</span>
+              </div>
+              <a href="#" aria-label="Get directions to Apollo Women's Clinic">Directions</a>
+            </li>
+            <li class="location-item">
+              <div>
+                <strong>District Trauma Centre</strong>
+                <span>2.7 km away · Emergency 24/7</span>
+              </div>
+              <a href="#" aria-label="Get directions to District Trauma Centre">Directions</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REPORT UNSAFE LOCATION ===== -->
+  <section class="safety-section" id="report" aria-labelledby="reportTitle">
+    <div class="container">
+      <h2 class="section-title" id="reportTitle">
+        <i class="fas fa-flag" style="color:var(--red)"></i> Report Unsafe Location
+      </h2>
+      <p class="section-subtitle">Help keep your community safe by flagging dangerous areas.</p>
+
+      <div class="report-form-card">
+        <form id="reportForm" novalidate>
+
+          <div class="form-group">
+            <label for="locationName">Location Name <span style="color:var(--red)">*</span></label>
+            <input
+              type="text"
+              id="locationName"
+              name="locationName"
+              placeholder="e.g. Park Street near Metro Station"
+              required
+              autocomplete="off"
+            />
+            <span class="form-error" id="locationNameError">Please enter a location name.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="locationArea">Area / Neighbourhood <span style="color:var(--red)">*</span></label>
+            <input
+              type="text"
+              id="locationArea"
+              name="locationArea"
+              placeholder="e.g. South Delhi, MG Road"
+              required
+              autocomplete="off"
+            />
+            <span class="form-error" id="locationAreaError">Please enter the area or neighbourhood.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="incidentType">Type of Concern <span style="color:var(--red)">*</span></label>
+            <select id="incidentType" name="incidentType" required>
+              <option value="">— Select a concern type —</option>
+              <option value="harassment">Harassment / Stalking</option>
+              <option value="poor-lighting">Poor Lighting</option>
+              <option value="isolated">Isolated / Deserted Area</option>
+              <option value="crime">Crime Reported Nearby</option>
+              <option value="other">Other</option>
+            </select>
+            <span class="form-error" id="incidentTypeError">Please select a concern type.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="description">Description <span style="color:var(--red)">*</span></label>
+            <textarea
+              id="description"
+              name="description"
+              placeholder="Describe what makes this location unsafe. Include time of day, specific details, etc."
+              required
+            ></textarea>
+            <span class="form-error" id="descriptionError">Please provide a description.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="reporterContact">Your Contact (optional)</label>
+            <input
+              type="email"
+              id="reporterContact"
+              name="reporterContact"
+              placeholder="your@email.com"
+              autocomplete="email"
+            />
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%">
+            <i class="fas fa-paper-plane"></i> Submit Report
+          </button>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <i class="fas fa-shield-heart"></i> SafeHer
+            <p>Empowering women with tools and community for a safer world.</p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="safety.html">Safety Tools</a>
+          <a href="blog.html">Blog</a>
+          <a href="community.html">Community</a>
+        </div>
+        <div class="footer-col">
+          <h4>Emergency</h4>
+          <a href="#">Police: 100</a>
+          <a href="#">Ambulance: 108</a>
+          <a href="#">Women Helpline: 1091</a>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+          <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 SafeHer — Women Safety &amp; Emergency Support. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== FIXED SOS BUTTON ===== -->
+  <button class="sos-btn" id="sosBtn" aria-label="Send SOS Emergency Alert">
+    <i class="fas fa-exclamation-circle"></i> SOS
+  </button>
+
+  <!-- ===== SOS MODAL ===== -->
+  <div class="modal-overlay" id="sosModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <div class="modal-icon" id="modalIcon" aria-hidden="true">🚨</div>
+      <h2 id="modalTitle">SOS Alert</h2>
+      <p id="modalDesc">Sending your emergency alert. Stay calm.</p>
+      <div class="countdown-ring" id="countdownNumber" aria-live="polite">3</div>
+      <div class="modal-status" id="modalStatus"></div>
+      <button class="modal-cancel" id="sosCancelBtn">Cancel</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>

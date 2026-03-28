@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community — SafeHer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <i class="fas fa-shield-heart"></i> SafeHer
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="safety.html">Safety Tools</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <h1><i class="fas fa-users" style="color:var(--red)"></i> Community</h1>
+      <p>Share experiences, ask questions, and support each other.</p>
+    </div>
+  </section>
+
+  <!-- ===== COMMUNITY LAYOUT ===== -->
+  <div class="container">
+    <div class="community-layout">
+
+      <!-- ===== SIDEBAR ===== -->
+      <aside class="community-sidebar" aria-label="Community sidebar">
+
+        <!-- Stats -->
+        <div class="sidebar-card">
+          <h3><i class="fas fa-chart-bar"></i> Community Stats</h3>
+          <div class="sidebar-stat">
+            <span>Members</span>
+            <strong>12,480</strong>
+          </div>
+          <div class="sidebar-stat">
+            <span>Posts Today</span>
+            <strong>84</strong>
+          </div>
+          <div class="sidebar-stat">
+            <span>Active Now</span>
+            <strong>237</strong>
+          </div>
+          <div class="sidebar-stat">
+            <span>Alerts Shared</span>
+            <strong>1,920</strong>
+          </div>
+        </div>
+
+        <!-- Guidelines -->
+        <div class="sidebar-card">
+          <h3><i class="fas fa-heart"></i> Community Guidelines</h3>
+          <ul style="font-size:0.88rem; color:var(--gray-text); line-height:1.8; padding-left:1rem; list-style:disc;">
+            <li>Be kind and respectful</li>
+            <li>No personal attacks</li>
+            <li>Protect your privacy</li>
+            <li>Report harmful content</li>
+            <li>Support one another</li>
+          </ul>
+        </div>
+
+        <!-- Tags -->
+        <div class="sidebar-card">
+          <h3><i class="fas fa-tags"></i> Popular Topics</h3>
+          <div class="tag-cloud">
+            <span class="tag">#SafeTravel</span>
+            <span class="tag">#SelfDefense</span>
+            <span class="tag">#LegalRights</span>
+            <span class="tag">#MentalHealth</span>
+            <span class="tag">#NightSafety</span>
+            <span class="tag">#OnlineSafety</span>
+            <span class="tag">#Support</span>
+            <span class="tag">#Awareness</span>
+          </div>
+        </div>
+
+      </aside>
+
+      <!-- ===== MAIN FEED ===== -->
+      <main aria-label="Community posts feed">
+
+        <!-- Post Form -->
+        <div class="post-form-card">
+          <h3><i class="fas fa-pen"></i> Share with the Community</h3>
+          <form id="communityPostForm" novalidate>
+            <textarea
+              id="postContent"
+              name="postContent"
+              placeholder="Share a safety tip, experience, or ask for advice... (max 280 characters)"
+              maxlength="280"
+              aria-label="Write your community post"
+            ></textarea>
+            <div class="post-form-footer">
+              <span class="char-count" id="charCount">280 characters remaining</span>
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i> Post
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Posts Feed -->
+        <div id="postsContainer" aria-label="Community posts" aria-live="polite">
+
+          <!-- Post 1 -->
+          <article class="post-card">
+            <div class="post-header">
+              <div class="avatar" style="background:#e63946">PR</div>
+              <div class="post-author">
+                <strong>Priya R.</strong>
+                <span>2 hours ago</span>
+              </div>
+            </div>
+            <p class="post-body">
+              Just completed a self-defense workshop at my local community centre. Highly recommend everyone to attend one — even 2 hours of training can make a huge difference in your confidence and awareness. Check if your city has free sessions! 💪
+            </p>
+            <div class="post-actions">
+              <button class="post-action-btn" data-action="like" aria-label="Like this post">
+                <i class="far fa-heart"></i>
+                <span class="like-count">47</span>
+              </button>
+              <button class="post-action-btn" data-action="reply" aria-label="Reply to this post">
+                <i class="far fa-comment"></i> Reply
+              </button>
+              <button class="post-action-btn" data-action="share" aria-label="Share this post">
+                <i class="fas fa-share"></i> Share
+              </button>
+            </div>
+          </article>
+
+          <!-- Post 2 -->
+          <article class="post-card">
+            <div class="post-header">
+              <div class="avatar" style="background:#457b9d">AM</div>
+              <div class="post-author">
+                <strong>Ananya M.</strong>
+                <span>5 hours ago</span>
+              </div>
+            </div>
+            <p class="post-body">
+              Reminder: always share your live location with a trusted friend when travelling alone at night. I use Google Maps' live location sharing — it's free and gives me so much peace of mind. Stay safe everyone! 🙏
+            </p>
+            <div class="post-actions">
+              <button class="post-action-btn" data-action="like" aria-label="Like this post">
+                <i class="far fa-heart"></i>
+                <span class="like-count">83</span>
+              </button>
+              <button class="post-action-btn" data-action="reply" aria-label="Reply to this post">
+                <i class="far fa-comment"></i> Reply
+              </button>
+              <button class="post-action-btn" data-action="share" aria-label="Share this post">
+                <i class="fas fa-share"></i> Share
+              </button>
+            </div>
+          </article>
+
+          <!-- Post 3 -->
+          <article class="post-card">
+            <div class="post-header">
+              <div class="avatar" style="background:#2a9d8f">SK</div>
+              <div class="post-author">
+                <strong>Sunita K.</strong>
+                <span>Yesterday</span>
+              </div>
+            </div>
+            <p class="post-body">
+              ⚠️ Safety alert for residents near Sector 14 market — there have been reports of bag snatching near the bus stop after 8PM. Please be cautious and avoid using your phone while walking in that area. Stay in groups if possible.
+            </p>
+            <div class="post-actions">
+              <button class="post-action-btn" data-action="like" aria-label="Like this post">
+                <i class="far fa-heart"></i>
+                <span class="like-count">112</span>
+              </button>
+              <button class="post-action-btn" data-action="reply" aria-label="Reply to this post">
+                <i class="far fa-comment"></i> Reply
+              </button>
+              <button class="post-action-btn" data-action="share" aria-label="Share this post">
+                <i class="fas fa-share"></i> Share
+              </button>
+            </div>
+          </article>
+
+          <!-- Post 4 -->
+          <article class="post-card">
+            <div class="post-header">
+              <div class="avatar" style="background:#6a0572">ND</div>
+              <div class="post-author">
+                <strong>Neha D.</strong>
+                <span>2 days ago</span>
+              </div>
+            </div>
+            <p class="post-body">
+              Does anyone know of good free legal aid resources for women in Bangalore? A friend of mine needs help with a harassment case and we're not sure where to start. Any guidance would be really appreciated. 🙏
+            </p>
+            <div class="post-actions">
+              <button class="post-action-btn" data-action="like" aria-label="Like this post">
+                <i class="far fa-heart"></i>
+                <span class="like-count">29</span>
+              </button>
+              <button class="post-action-btn" data-action="reply" aria-label="Reply to this post">
+                <i class="far fa-comment"></i> Reply
+              </button>
+              <button class="post-action-btn" data-action="share" aria-label="Share this post">
+                <i class="fas fa-share"></i> Share
+              </button>
+            </div>
+          </article>
+
+          <!-- Post 5 -->
+          <article class="post-card">
+            <div class="post-header">
+              <div class="avatar" style="background:#f4a261">RS</div>
+              <div class="post-author">
+                <strong>Ritu S.</strong>
+                <span>3 days ago</span>
+              </div>
+            </div>
+            <p class="post-body">
+              Tip: Save the Women's Helpline number (1091) as a speed dial on your phone. It's free, available 24/7, and the counsellors are trained to help in all kinds of situations — not just emergencies. Spread the word! 📞
+            </p>
+            <div class="post-actions">
+              <button class="post-action-btn" data-action="like" aria-label="Like this post">
+                <i class="far fa-heart"></i>
+                <span class="like-count">156</span>
+              </button>
+              <button class="post-action-btn" data-action="reply" aria-label="Reply to this post">
+                <i class="far fa-comment"></i> Reply
+              </button>
+              <button class="post-action-btn" data-action="share" aria-label="Share this post">
+                <i class="fas fa-share"></i> Share
+              </button>
+            </div>
+          </article>
+
+          <!-- Post 6 -->
+          <article class="post-card">
+            <div class="post-header">
+              <div class="avatar" style="background:#023e8a">KP</div>
+              <div class="post-author">
+                <strong>Kavya P.</strong>
+                <span>4 days ago</span>
+              </div>
+            </div>
+            <p class="post-body">
+              I started a neighbourhood WhatsApp group for women in my area to share safety updates and look out for each other. It's been running for 3 months and already helped 2 women in difficult situations. Highly recommend starting one in your area! 🏘️
+            </p>
+            <div class="post-actions">
+              <button class="post-action-btn" data-action="like" aria-label="Like this post">
+                <i class="far fa-heart"></i>
+                <span class="like-count">94</span>
+              </button>
+              <button class="post-action-btn" data-action="reply" aria-label="Reply to this post">
+                <i class="far fa-comment"></i> Reply
+              </button>
+              <button class="post-action-btn" data-action="share" aria-label="Share this post">
+                <i class="fas fa-share"></i> Share
+              </button>
+            </div>
+          </article>
+
+        </div><!-- /postsContainer -->
+      </main>
+
+    </div><!-- /community-layout -->
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer role="contentinfo" style="margin-top:2rem;">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <i class="fas fa-shield-heart"></i> SafeHer
+            <p>Empowering women with tools and community for a safer world.</p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="safety.html">Safety Tools</a>
+          <a href="blog.html">Blog</a>
+          <a href="community.html">Community</a>
+        </div>
+        <div class="footer-col">
+          <h4>Emergency</h4>
+          <a href="#">Police: 100</a>
+          <a href="#">Ambulance: 108</a>
+          <a href="#">Women Helpline: 1091</a>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+          <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 SafeHer — Women Safety &amp; Emergency Support. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== FIXED SOS BUTTON ===== -->
+  <button class="sos-btn" id="sosBtn" aria-label="Send SOS Emergency Alert">
+    <i class="fas fa-exclamation-circle"></i> SOS
+  </button>
+
+  <!-- ===== SOS MODAL ===== -->
+  <div class="modal-overlay" id="sosModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <div class="modal-icon" id="modalIcon" aria-hidden="true">🚨</div>
+      <h2 id="modalTitle">SOS Alert</h2>
+      <p id="modalDesc">Sending your emergency alert. Stay calm.</p>
+      <div class="countdown-ring" id="countdownNumber" aria-live="polite">3</div>
+      <div class="modal-status" id="modalStatus"></div>
+      <button class="modal-cancel" id="sosCancelBtn">Cancel</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>

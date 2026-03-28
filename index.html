@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Women Safety & Emergency Support</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <i class="fas fa-shield-heart"></i>
+        SafeHer
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="safety.html">Safety Tools</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="container">
+      <div class="hero-badge">
+        <i class="fas fa-shield-heart"></i> Your Safety, Our Priority
+      </div>
+      <h1 id="heroTitle">
+        Women Safety &amp;<br><span>Emergency Support</span>
+      </h1>
+      <p>
+        Instant SOS alerts, safety tools, and a supportive community —
+        everything you need to stay safe and empowered.
+      </p>
+      <div class="hero-actions">
+        <a href="safety.html" class="btn btn-primary">
+          <i class="fas fa-tools"></i> Safety Tools
+        </a>
+        <a href="community.html" class="btn btn-outline">
+          <i class="fas fa-users"></i> Join Community
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <strong>10K+</strong>
+          <span>Women Protected</span>
+        </div>
+        <div class="stat-item">
+          <strong>500+</strong>
+          <span>Alerts Sent</span>
+        </div>
+        <div class="stat-item">
+          <strong>24/7</strong>
+          <span>Support Available</span>
+        </div>
+        <div class="stat-item">
+          <strong>50+</strong>
+          <span>Cities Covered</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="features" aria-labelledby="featuresTitle">
+    <div class="container">
+      <h2 class="section-title" id="featuresTitle">How We Keep You Safe</h2>
+      <p class="section-subtitle">Tools and resources designed with your safety in mind.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-bell"></i></div>
+          <h3>Instant SOS Alert</h3>
+          <p>One tap sends an emergency alert to your trusted contacts immediately.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <h3>Nearby Help</h3>
+          <p>Find the closest police stations and hospitals in seconds.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-clipboard-check"></i></div>
+          <h3>Safety Checklist</h3>
+          <p>Stay prepared with our curated emergency preparedness checklist.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-users"></i></div>
+          <h3>Community Support</h3>
+          <p>Connect with a network of women sharing experiences and advice.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-flag"></i></div>
+          <h3>Report Unsafe Areas</h3>
+          <p>Flag dangerous locations to help keep your community informed.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-book-open"></i></div>
+          <h3>Safety Resources</h3>
+          <p>Expert articles and guides on personal safety and self-defense.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUICK ACTIONS ===== -->
+  <section class="quick-actions" aria-labelledby="actionsTitle">
+    <div class="container">
+      <h2 class="section-title" id="actionsTitle">Quick Actions</h2>
+      <p class="section-subtitle">Everything you need, one tap away.</p>
+      <div class="actions-grid">
+        <a href="safety.html" class="action-card" aria-label="Go to Safety Checklist">
+          <i class="fas fa-clipboard-list"></i>
+          <h3>Safety Checklist</h3>
+          <p>Review your emergency preparedness</p>
+        </a>
+        <a href="safety.html#nearby" class="action-card" aria-label="Find Nearby Help">
+          <i class="fas fa-hospital"></i>
+          <h3>Nearby Help</h3>
+          <p>Police stations &amp; hospitals near you</p>
+        </a>
+        <a href="safety.html#report" class="action-card" aria-label="Report Unsafe Location">
+          <i class="fas fa-exclamation-triangle"></i>
+          <h3>Report Location</h3>
+          <p>Flag an unsafe area in your community</p>
+        </a>
+        <a href="blog.html" class="action-card" aria-label="Read Safety Blog">
+          <i class="fas fa-newspaper"></i>
+          <h3>Safety Blog</h3>
+          <p>Tips, guides, and expert advice</p>
+        </a>
+        <a href="community.html" class="action-card" aria-label="Join Community">
+          <i class="fas fa-comments"></i>
+          <h3>Community</h3>
+          <p>Share and connect with others</p>
+        </a>
+        <div class="action-card" onclick="document.getElementById('sosBtn').click()" role="button" tabindex="0" aria-label="Trigger SOS Alert">
+          <i class="fas fa-phone-alt"></i>
+          <h3>Test SOS</h3>
+          <p>Try the emergency alert flow</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <i class="fas fa-shield-heart"></i> SafeHer
+            <p>Empowering women with tools and community for a safer world.</p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="safety.html">Safety Tools</a>
+          <a href="blog.html">Blog</a>
+          <a href="community.html">Community</a>
+        </div>
+        <div class="footer-col">
+          <h4>Emergency</h4>
+          <a href="#">Police: 100</a>
+          <a href="#">Ambulance: 108</a>
+          <a href="#">Women Helpline: 1091</a>
+          <a href="#">Childline: 1098</a>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+          <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 SafeHer — Women Safety &amp; Emergency Support. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== FIXED SOS BUTTON ===== -->
+  <button class="sos-btn" id="sosBtn" aria-label="Send SOS Emergency Alert">
+    <i class="fas fa-exclamation-circle"></i> SOS
+  </button>
+
+  <!-- ===== SOS MODAL ===== -->
+  <div class="modal-overlay" id="sosModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <div class="modal-icon" id="modalIcon" aria-hidden="true">🚨</div>
+      <h2 id="modalTitle">SOS Alert</h2>
+      <p id="modalDesc">Sending your emergency alert. Stay calm.</p>
+      <div class="countdown-ring" id="countdownNumber" aria-live="polite">3</div>
+      <div class="modal-status" id="modalStatus"></div>
+      <button class="modal-cancel" id="sosCancelBtn">Cancel</button>
+    </div>
+  </div>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — SafeHer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <i class="fas fa-shield-heart"></i> SafeHer
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="safety.html">Safety Tools</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <h1><i class="fas fa-newspaper" style="color:var(--red)"></i> Safety Blog</h1>
+      <p>Expert articles, guides, and stories to keep you informed and empowered.</p>
+    </div>
+  </section>
+
+  <!-- ===== BLOG GRID ===== -->
+  <section style="padding: 3rem 0;" aria-labelledby="blogTitle">
+    <div class="container">
+      <h2 class="section-title" id="blogTitle">Latest Articles</h2>
+      <p class="section-subtitle">Stay informed with our latest safety tips and community stories.</p>
+
+      <div class="blog-grid">
+
+        <!-- Card 1 -->
+        <article class="blog-card">
+          <div class="blog-card-img-placeholder" style="background: linear-gradient(135deg,#e63946,#c1121f);">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Self Defense</span>
+            <h3>10 Essential Self-Defense Moves Every Woman Should Know</h3>
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar-alt"></i> Dec 10, 2024</span>
+              <span><i class="fas fa-clock"></i> 5 min read</span>
+            </div>
+            <p>Learn practical self-defense techniques that can help you escape dangerous situations quickly and confidently.</p>
+            <button class="btn btn-outline" onclick="showToast('Full article coming soon!','')">Read More</button>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="blog-card">
+          <div class="blog-card-img-placeholder" style="background: linear-gradient(135deg,#457b9d,#1d3557);">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Technology</span>
+            <h3>Best Safety Apps for Women in 2024</h3>
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar-alt"></i> Dec 5, 2024</span>
+              <span><i class="fas fa-clock"></i> 4 min read</span>
+            </div>
+            <p>A curated list of the most reliable safety and emergency apps available on Android and iOS right now.</p>
+            <button class="btn btn-outline" onclick="showToast('Full article coming soon!','')">Read More</button>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="blog-card">
+          <div class="blog-card-img-placeholder" style="background: linear-gradient(135deg,#2a9d8f,#264653);">
+            <i class="fas fa-brain"></i>
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Mental Health</span>
+            <h3>Healing After Trauma: Resources and Support for Survivors</h3>
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar-alt"></i> Nov 28, 2024</span>
+              <span><i class="fas fa-clock"></i> 7 min read</span>
+            </div>
+            <p>A compassionate guide to mental health resources, hotlines, and communities for women recovering from trauma.</p>
+            <button class="btn btn-outline" onclick="showToast('Full article coming soon!','')">Read More</button>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="blog-card">
+          <div class="blog-card-img-placeholder" style="background: linear-gradient(135deg,#f4a261,#e76f51);">
+            <i class="fas fa-car"></i>
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Travel Safety</span>
+            <h3>Staying Safe While Travelling Alone as a Woman</h3>
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar-alt"></i> Nov 20, 2024</span>
+              <span><i class="fas fa-clock"></i> 6 min read</span>
+            </div>
+            <p>Practical tips for solo female travellers — from booking safe accommodation to navigating unfamiliar cities.</p>
+            <button class="btn btn-outline" onclick="showToast('Full article coming soon!','')">Read More</button>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="blog-card">
+          <div class="blog-card-img-placeholder" style="background: linear-gradient(135deg,#6a0572,#ab83a1);">
+            <i class="fas fa-gavel"></i>
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Legal Rights</span>
+            <h3>Know Your Rights: Legal Protections for Women in India</h3>
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar-alt"></i> Nov 15, 2024</span>
+              <span><i class="fas fa-clock"></i> 8 min read</span>
+            </div>
+            <p>An overview of key laws protecting women — from the POCSO Act to the Domestic Violence Act and how to use them.</p>
+            <button class="btn btn-outline" onclick="showToast('Full article coming soon!','')">Read More</button>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="blog-card">
+          <div class="blog-card-img-placeholder" style="background: linear-gradient(135deg,#023e8a,#0077b6);">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Community</span>
+            <h3>Building a Safety Network: How Community Keeps Us Safe</h3>
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar-alt"></i> Nov 8, 2024</span>
+              <span><i class="fas fa-clock"></i> 5 min read</span>
+            </div>
+            <p>How neighbourhood watch groups, online communities, and peer support networks are changing women's safety.</p>
+            <button class="btn btn-outline" onclick="showToast('Full article coming soon!','')">Read More</button>
+          </div>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="blog-card">
+          <div class="blog-card-img-placeholder" style="background: linear-gradient(135deg,#d62828,#f77f00);">
+            <i class="fas fa-home"></i>
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Home Safety</span>
+            <h3>Home Security Checklist: Protecting Your Space</h3>
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar-alt"></i> Oct 30, 2024</span>
+              <span><i class="fas fa-clock"></i> 4 min read</span>
+            </div>
+            <p>Simple, affordable steps to make your home safer — from smart locks to security cameras and emergency plans.</p>
+            <button class="btn btn-outline" onclick="showToast('Full article coming soon!','')">Read More</button>
+          </div>
+        </article>
+
+        <!-- Card 8 -->
+        <article class="blog-card">
+          <div class="blog-card-img-placeholder" style="background: linear-gradient(135deg,#386641,#6a994e);">
+            <i class="fas fa-child"></i>
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Parenting</span>
+            <h3>Teaching Children About Personal Safety and Boundaries</h3>
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar-alt"></i> Oct 22, 2024</span>
+              <span><i class="fas fa-clock"></i> 6 min read</span>
+            </div>
+            <p>Age-appropriate ways to talk to your children about body safety, strangers, and what to do in an emergency.</p>
+            <button class="btn btn-outline" onclick="showToast('Full article coming soon!','')">Read More</button>
+          </div>
+        </article>
+
+        <!-- Card 9 -->
+        <article class="blog-card">
+          <div class="blog-card-img-placeholder" style="background: linear-gradient(135deg,#560bad,#7b2d8b);">
+            <i class="fas fa-laptop"></i>
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Digital Safety</span>
+            <h3>Protecting Yourself from Online Harassment and Stalking</h3>
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar-alt"></i> Oct 14, 2024</span>
+              <span><i class="fas fa-clock"></i> 5 min read</span>
+            </div>
+            <p>Steps to secure your digital life — privacy settings, reporting tools, and what to do if you're being cyberstalked.</p>
+            <button class="btn btn-outline" onclick="showToast('Full article coming soon!','')">Read More</button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <i class="fas fa-shield-heart"></i> SafeHer
+            <p>Empowering women with tools and community for a safer world.</p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="safety.html">Safety Tools</a>
+          <a href="blog.html">Blog</a>
+          <a href="community.html">Community</a>
+        </div>
+        <div class="footer-col">
+          <h4>Emergency</h4>
+          <a href="#">Police: 100</a>
+          <a href="#">Ambulance: 108</a>
+          <a href="#">Women Helpline: 1091</a>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+          <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 SafeHer — Women Safety &amp; Emergency Support. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== FIXED SOS BUTTON ===== -->
+  <button class="sos-btn" id="sosBtn" aria-label="Send SOS Emergency Alert">
+    <i class="fas fa-exclamation-circle"></i> SOS
+  </button>
+
+  <!-- ===== SOS MODAL ===== -->
+  <div class="modal-overlay" id="sosModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <div class="modal-icon" id="modalIcon" aria-hidden="true">🚨</div>
+      <h2 id="modalTitle">SOS Alert</h2>
+      <p id="modalDesc">Sending your emergency alert. Stay calm.</p>
+      <div class="countdown-ring" id="countdownNumber" aria-live="polite">3</div>
+      <div class="modal-status" id="modalStatus"></div>
+      <button class="modal-cancel" id="sosCancelBtn">Cancel</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>

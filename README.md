@@ -22,36 +22,9 @@ Build Tool	Vite
 Styling	Custom CSS
 AI Assistance	Kiro AI
 
-⚙️ Installation & Setup
-
-To run this project locally:
-
-# Clone the repository
-git clone https://github.com/your-username/womensafetyui.git
-
-# Navigate to project directory
-cd womensafetyui
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-
-⸻
-
 🌐 Deployment
 
 The application is deployed using GitHub Pages for easy access and hosting.
-
-Deployment Steps:
-
-npm run build
-
-	•	Upload the dist/ folder or configure GitHub Pages deployment.
-
-⸻
 
 🎯 Objectives
 	•	Provide accessible safety information and resources

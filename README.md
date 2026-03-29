@@ -71,11 +71,6 @@ npm run build
 Hari Krishnan
 	•	GitHub: https://github.com/krishna0729
 
-📄 License
-
-This project is licensed under the MIT License.
-Feel free to use and modify for educational or professional purposes.
-
 ⭐ Acknowledgements
 	•	Developed with support from Kiro AI
 	•	Inspired by the need for safer and more accessible digital solutions.
